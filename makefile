@@ -16,7 +16,6 @@ erase: ## stop and delete containers, clean volumes.
 .PHONY: build
 build: ## build environment and initialize composer and project dependencies
 		docker-compose build
-
 		docker-compose run --rm php sh -lc 'xoff;COMPOSER_MEMORY_LIMIT=-1 composer install'
 
 .PHONY: artifact
