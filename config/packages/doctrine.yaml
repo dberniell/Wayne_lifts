@@ -1,0 +1,32 @@
+parameters:
+    env(DATABASE_HOST): 'mysql'
+    env(DATABASE_PORT): '3306'
+    env(DATABASE_NAME): 'wayne_lifts'
+    env(DATABASE_USER): 'root'
+    env(DATABASE_PASS): 'api'
+
+doctrine:
+    dbal:
+        driver:   pdo_mysql
+        host:     "%env(DATABASE_HOST)%"
+        port:     "%env(DATABASE_PORT)%"
+        dbname:   "%env(DATABASE_NAME)%"
+        user:     "%env(DATABASE_USER)%"
+        password: "%env(DATABASE_PASS)%"
+        charset:  UTF8
+        server_version: '8.0'
+
+        # IMPORTANT: You MUST configure your server version,
+        # either here or in the DATABASE_URL env var (see .env file)
+        #server_version: '5.7'
+    orm:
+        auto_generate_proxy_classes: true
+        naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+        auto_mapping: true
+        mappings:
+            App:
+                is_bundle: false
+                type: annotation
+                dir: '%kernel.project_dir%/src/Entity'
+                prefix: 'App\Entity'
+                alias: App

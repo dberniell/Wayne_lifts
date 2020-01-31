@@ -1,0 +1,28 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h2>Daily table according number of lifts ({{ numLifts }} lifts)</h2>
+    {{ form(form) }}
+    <hr>
+    {% block table %}
+        <table>
+            <tr>
+                <th>Num. lift (id)</th>
+                <th>Minute of Day (time)</th>
+                <th>Actual floor</th>
+                <th>Floors traveled for getting at the actual</th>
+                <th>Total floors traveled by the beginning of the day till the actual moment</th>
+            </tr>
+
+            {% for request in requests %}
+                <tr>
+                    <td>{{ request.id }}</td>
+                    <td>{{ request.minuteOfDay }}</td>
+                    <td>{{ request.floor }}</td>
+                    <td>{{ request.floorsTraveled }}</td>
+                    <td>{{ request.totalFloorsTraveledByDay }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endblock %}
+{% endblock %}

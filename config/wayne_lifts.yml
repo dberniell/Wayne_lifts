@@ -1,0 +1,6 @@
+parameters:
+
+  boxmotions.wayne.root_path: '%kernel.root_dir%/../../src/'
+
+  boxmotions.wayne.infrastructure.database.on_demand: false
+  boxmotions.wayne.infrastructure.database.schema_file: '%kernel.root_dir%/../../databases/wayne_lifts.sql'
