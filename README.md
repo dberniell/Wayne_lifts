@@ -4,42 +4,21 @@ A project with using Symfony 5 as framework MVC and running with php7 and MySQL 
 
 ## Specs
 
-<a href="https://dberniell.github.io/firestorm-operation/" target="blank">Specs</a>
+<a href="https://dberniell.github.io/Wayne_lifts/" target="blank">Specs</a>
 
 ## Documentation
 
-[Buses](https://github.com/dberniell/firestorm-operation/blob/master/docs/GetStarted/Buses.md)
-
-[Creating an Application Use Case](https://github.com/dberniell/firestorm-operation/blob/master/docs/GetStarted/UseCases.md)
-
-[Adding Projections](https://github.com/dberniell/firestorm-operation/blob/master/docs/GetStarted/Projections.md)
-
-[Xdebug configuration](https://github.com/dberniell/firestorm-operation/blob/master/docs/GetStarted/Xdebug.md)
+[Xdebug configuration](https://github.com/dberniell/Wayne_lifts/blob/master/docs/GetStarted/Xdebug.md)
 
 ## Workflow
-[WorkFlow](https://github.com/dberniell/firestorm-operation/blob/master/docs/WorkFlow.md)
-
-## Architecture
-
-![Architecture](https://github.com/dberniell/firestorm-operation/blob/master/docs/architecture.png)
+[WorkFlow](https://github.com/dberniell/Wayne_lifts/blob/master/docs/WorkFlow.md)
 
 ## Implementations
 
 - [x] Environment in Docker
-- [x] Command Bus, Query Bus, Event Bus
-- [x] Event Store
-- [x] Read Model
+- [x] MVC
 - [x] Rest API
-- [x] Event Store Rest API 
-- [x] Swagger API Doc
-
-## Use Cases
-
-#### Area
-- [x] Calculate Area
-- [x] Get Area by id
-
-![API Doc](https://github.com/dberniell/firestorm-operation/blob/master/docs/swagger.png)
+- [x] Scalability
 
 ## Stack
 
@@ -47,6 +26,10 @@ A project with using Symfony 5 as framework MVC and running with php7 and MySQL 
 - Mysql 8.0
 
 ## Project Setup
+Initial setup
+
+`make start`
+
 Build Environment
 
 `make build`
