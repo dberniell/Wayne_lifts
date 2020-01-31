@@ -3,8 +3,6 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 export PAGER=less
 export PS1='\h:\w\$ '
 
-umask 022
-
 alias xon='mv /tmp/00_xdebug.ini /etc/php7/conf.d/'
 alias xoff='mv /etc/php7/conf.d/00_xdebug.ini /tmp'
 alias opcon='mv /tmp/00_opcache.ini /etc/php7/conf.d/'
