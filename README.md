@@ -1,6 +1,7 @@
 # Wayne lifts
 
-A project with using Symfony 5 as framework and running with php7 and MySQL 8.
+A project with using Symfony 5 as framework MVC and running with php7 and MySQL 8.
+
 ## Specs
 
 <a href="https://dberniell.github.io/firestorm-operation/" target="blank">Specs</a>
