@@ -89,3 +89,9 @@ Filesystem mapping:
 - Some unit tests
 - Tests e2e
 - More comments on classes methods
+
+## Start app
+
+1. Access http://localhost:8080
+2. See reeport and select different number of lifts.
+3. You can also change number of lifts by accessing http://localhost:8080/{numLifts}
